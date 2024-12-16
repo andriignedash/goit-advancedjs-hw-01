@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px 0 #cccccc;
+}
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+    color: #333;
+    display: block;
+}
+.feedback-form-input {
+    width: 408px;
+    height: 40px;
+    border: 1px solid #303030;
+    margin-bottom: 8px;
+}
+
+.feedback-form-message {
+    width: 408px;
+    height: 80px;
+    border: 1px solid #303030;
+    margin-bottom: 8px;
+    resize: none;
+}
+
+.feedback-form-submit {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4E75FF;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: transform 250ms linear;
+}
+
+.feedback-form-input:focus,
+.feedback-form-message:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-form-submit:hover,
+.feedback-form-submit:focus {
+    transform: scale(1.05);
+    background-color: #6C8CFF;
+}
